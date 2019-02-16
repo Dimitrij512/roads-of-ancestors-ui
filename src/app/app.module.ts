@@ -11,13 +11,15 @@ import { FooterComponent } from './shared/footer/footer.component';
 
 import { HomeModule } from './home/home.module';
 import { FundComponent } from './fund/fund.component';
+import { ShipyardComponent } from './shipyard/shipyard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    FundComponent
+    FundComponent,
+    ShipyardComponent
   ],
   imports: [
     BrowserModule,
