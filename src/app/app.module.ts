@@ -12,6 +12,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HomeModule } from './home/home.module';
 import { FundComponent } from './fund/fund.component';
 import { ShipyardComponent } from './shipyard/shipyard.component';
+import {Ng2OdometerModule} from 'ng2-odometer';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ShipyardComponent } from './shipyard/shipyard.component';
     FormsModule,
     RouterModule,
     AppRoutingModule,
-    HomeModule
+    HomeModule,
+    Ng2OdometerModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
