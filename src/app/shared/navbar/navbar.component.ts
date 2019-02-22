@@ -9,6 +9,8 @@ import { Location, LocationStrategy, PathLocationStrategy } from '@angular/commo
 export class NavbarComponent implements OnInit {
     private toggleButton: any;
     private sidebarVisible: boolean;
+    fundProjectsVisible = false;
+    aboutUsVisible = false;
 
     constructor(public location: Location, private element : ElementRef) {
         this.sidebarVisible = false;
@@ -37,6 +39,8 @@ export class NavbarComponent implements OnInit {
         this.toggleButton.classList.remove('toggled');
         this.sidebarVisible = false;
         html.classList.remove('nav-open');
+        this.fundProjectsVisible = false;
+        this.aboutUsVisible = false;
     };
     sidebarToggle() {
         // const toggleButton = this.toggleButton;
