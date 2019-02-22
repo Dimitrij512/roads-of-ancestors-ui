@@ -1,0 +1,26 @@
+nav.navbar-transparent {   
+  background-color: gray !important;   
+}
+
+.transparent, button.d-lg-none.nav-link {
+  background-color: transparent !important;
+  border: 0px !important;
+}
+
+p.d-lg-none, a.d-lg-none {
+  margin: 0px 0px;
+  color: #9A9A9A !important;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.5em;
+  padding: 15px 0;
+
+  &:hover{
+    color: #403D39 !important;
+  }
+}
+
+.placing{
+  margin: 0px 0px 15px 15px !important;
+}
