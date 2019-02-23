@@ -17,8 +17,7 @@
                       <div ngbDropdown
                         class="d-inline-block dropdown" 
                         >
-                        <button class="nav-link transparent" 
-                                id="projectsDropDown" 
+                        <button class="nav-link transparent"                                 
                                 data-placement="bottom" 
                                 ngbDropdownToggle 
                                 title="Список проектів" 
@@ -57,8 +56,8 @@
                 <li class="nav-item">
                   <ng-container *ngIf = "!sidebarVisible">
                     <div ngbDropdown class="d-inline-block dropdown">
-                    <button class="nav-link transparent" id="dropdownBasic1" ngbDropdownToggle title="Глянути список">Про нас</button>
-                      <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
+                    <button class="nav-link transparent" ngbDropdownToggle title="Глянути список">Про нас</button>
+                      <div ngbDropdownMenu aria-labelledby="projectsDropDown" class="dropdown-menu">
                         <a [routerLink]="['/fund-regulations']" class="dropdown-item">Статут фонду</a>
                       </div>
                     </div>                                                             

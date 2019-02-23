@@ -24,3 +24,9 @@ p.d-lg-none, a.d-lg-none {
 .placing{
   margin: 0px 0px 15px 15px !important;
 }
+
+button.nav-link.transparent.dropdown-toggle {
+  &:focus{
+    outline: 0;    
+  }  
+}
