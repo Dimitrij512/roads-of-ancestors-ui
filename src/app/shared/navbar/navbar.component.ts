@@ -8,7 +8,7 @@ import { Location, LocationStrategy, PathLocationStrategy } from '@angular/commo
 })
 export class NavbarComponent implements OnInit {
     private toggleButton: any;
-    private sidebarVisible: boolean;
+    public sidebarVisible: boolean;
     fundProjectsVisible = false;
     aboutUsVisible = false;
 
@@ -64,6 +64,16 @@ export class NavbarComponent implements OnInit {
     isDocumentation() {
         var titlee = this.location.prepareExternalUrl(this.location.path());
         if( titlee === '/documentation' ) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    isFund() {
+        var titlee = this.location.prepareExternalUrl(this.location.path());
+        if( titlee === '/fund-regulations' ) {
             return true;
         }
         else {

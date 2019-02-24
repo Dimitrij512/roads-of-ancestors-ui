@@ -14,14 +14,11 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                   <ng-container *ngIf = "!sidebarVisible">
-                      <div ngbDropdown
-                        class="d-inline-block dropdown" 
-                        >
+                      <div ngbDropdown class="d-inline-block dropdown">
                         <button class="nav-link transparent"                                 
                                 data-placement="bottom" 
                                 ngbDropdownToggle 
-                                title="Список проектів" 
-                                >Проекти фонду
+                                title="Список проектів">Проекти фонду
                         </button>
                         <div ngbDropdownMenu aria-labelledby="projectsDropDown" class="dropdown-menu">
                           <a [routerLink]="['/shipyard']" class="dropdown-item">Середньовічна корабельня</a>
@@ -63,15 +60,11 @@
                     </div>                                                             
                   </ng-container>
                   <ng-container *ngIf = "sidebarVisible">
-                      <p class="d-lg-none" 
-                          title="Cписок проектів" 
-                          (click) ="aboutUsVisible = !aboutUsVisible">
-                        Про нас                                            
-                      </p>
+                      <p class="d-lg-none" title="Cписок проектів" (click) ="aboutUsVisible = !aboutUsVisible">Про нас</p>
                       <div *ngIf = "aboutUsVisible">
                         <div class="placing"><a [routerLink]="['/fund-regulations']" class="d-lg-none">Статут фонду</a></div>                                                                       
                       </div>
-                    </ng-container>                                                       
+                  </ng-container>
                 </li>
                                 
             </ul>
