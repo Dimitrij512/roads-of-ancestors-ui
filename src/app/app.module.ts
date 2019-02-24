@@ -13,6 +13,7 @@ import { HomeModule } from './home/home.module';
 import { FundComponent } from './fund/fund.component';
 import { ShipyardComponent } from './shipyard/shipyard.component';
 import {Ng2OdometerModule} from 'ng2-odometer';
+import { VertepComponent } from './vertep/vertep.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {Ng2OdometerModule} from 'ng2-odometer';
     NavbarComponent,
     FooterComponent,
     FundComponent,
-    ShipyardComponent
+    ShipyardComponent,
+    VertepComponent
   ],
   imports: [
     BrowserModule,

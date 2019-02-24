@@ -6,12 +6,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { FundComponent } from './fund/fund.component';
 import {ShipyardComponent} from './shipyard/shipyard.component';
+import {VertepComponent} from './vertep/vertep.component';
 
 const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'fund-regulations', component: FundComponent },
-    { path: 'shipyard', component: ShipyardComponent }
+    { path: 'shipyard', component: ShipyardComponent },
+    { path: 'vertep', component: VertepComponent }
 ];
 
 @NgModule({
