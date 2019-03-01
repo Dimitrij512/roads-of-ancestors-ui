@@ -18,3 +18,8 @@ h3 {
   -ms-transform: none;
   -moz-transform: none;
 }
+
+::ng-deep button.btn.btn-link.collapsed {   
+  white-space: normal ;
+  text-align: left;
+}
