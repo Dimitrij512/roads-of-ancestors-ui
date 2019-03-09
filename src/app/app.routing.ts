@@ -7,13 +7,15 @@ import { HomeComponent } from './home/home.component';
 import { FundComponent } from './fund/fund.component';
 import {ShipyardComponent} from './shipyard/shipyard.component';
 import {VertepComponent} from './vertep/vertep.component';
+import { TeamComponent } from './team/team.component';
 
 const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'fund-regulations', component: FundComponent },
     { path: 'shipyard', component: ShipyardComponent },
-    { path: 'vertep', component: VertepComponent }
+    { path: 'vertep', component: VertepComponent },
+    { path: 'team', component: TeamComponent }
 ];
 
 @NgModule({

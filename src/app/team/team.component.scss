@@ -1,0 +1,66 @@
+ul {
+  list-style-type: none;
+}
+
+.member {    
+  width: 220px;
+  height: 220px;
+  margin: 15px;
+}
+
+.item-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  text-align: left;  
+}
+
+h4.name {
+  font-weight: bold;
+}
+
+p.description {  
+  margin-top: 10px;
+}
+
+div.mobile {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.email>a {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  text-align: left;  
+}
+
+i.fa.fa-envelope, i.fa.fa-mobile, i.fa.fa-phone-square { 
+  padding-top: 5px;
+}
+
+ul>li{
+  display: inline-block; 
+  width: 50%;   
+}
+
+.info {
+  width: 50%;
+}
+
+.personal-info {
+  margin-top: 10px;
+}
+
+.our-team {
+  font-size: 70px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+ul {
+  margin-top: 70px;
+}
