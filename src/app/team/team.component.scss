@@ -10,8 +10,11 @@ ul {
 
 .item-container{
   display: flex;
+  display: -webkit-flex;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   align-content: flex-start;
+  -webkit-align-content: flex-start;
   text-align: left;  
 }
 
@@ -25,16 +28,22 @@ p.description {
 
 div.mobile {
   display: flex;
+  display: -webkit-flex;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   align-content: flex-start;
+  -webkit-align-content: flex-start;
   text-align: left;
   margin-top: 10px;
 }
 
 .email>a {
   display: flex;
+  display: -webkit-flex;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   align-content: flex-start;
+  -webkit-align-content: flex-start;
   text-align: left;  
 }
 
@@ -130,33 +139,38 @@ h4.name {
   i.fa.fa-envelope, i.fa.fa-phone-square { 
     padding-top: 0px;
   }
-
-  @media (max-width: 374px) {
-    .info {
-      width: 50%;
-    }   
-
-    h4.name {     
-      font-size: 14px;
-    }
-
-    p.description {
-      font-size: 10px;
-      line-height: normal;
-      margin-top: 7px;
-    }
-
-    div.mobile {
-      margin-top: 7px;
-    }
-
-    div.mobile p, div.email p {
-      font-size: 8px;
-      line-height: normal;
-    }
-
-    .angular-logo img {
-      padding-top: 170px;
-    }
+  
+  .angular-logo img {
+    padding-top: 100px;
   }  
+
 }
+
+@media (max-width: 374px) {
+  .info {
+    width: 50%;
+  }   
+
+  h4.name {     
+    font-size: 14px;
+  }
+
+  p.description {
+    font-size: 10px;
+    line-height: normal;
+    margin-top: 7px;
+  }
+
+  div.mobile {
+    margin-top: 7px;
+  }
+
+  div.mobile p, div.email p {
+    font-size: 8px;
+    line-height: normal;
+  }
+
+  .angular-logo img {
+    padding-top: 170px;
+  }
+} 
