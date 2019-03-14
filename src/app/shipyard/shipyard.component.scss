@@ -2,11 +2,17 @@ ng2-odometer {
   font-size: 80px;
 }
 
-@media (max-width: 375px) { 
+@media (max-width: 812px) { 
   div.motto.text-center {
     padding-top: 100px;
   }
   h1 {
     font-size: 3.0em;
+  }     
+}
+
+@media (max-width: 414px) {   
+  ng2-odometer {
+    font-size: 60px;
   }
 }

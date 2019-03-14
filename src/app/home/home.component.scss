@@ -1,5 +1,12 @@
-@media (max-width: 375px) { 
-    img {
+@media (max-width: 812px) { 
+  .angular-logo img {
+      padding-top: 100px;
+  }
+}
+
+@media (max-width: 374px) { 
+  .angular-logo img {
       padding-top: 170px;
     }
   }
+  
