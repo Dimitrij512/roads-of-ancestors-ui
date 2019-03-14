@@ -11,6 +11,8 @@ ul {
 .item-container{
   display: flex;
   display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   align-content: flex-start;
@@ -29,6 +31,8 @@ p.description {
 div.mobile {
   display: flex;
   display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   align-content: flex-start;
@@ -40,6 +44,8 @@ div.mobile {
 .email>a {
   display: flex;
   display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   align-content: flex-start;
