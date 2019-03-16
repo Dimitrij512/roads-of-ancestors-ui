@@ -14,6 +14,7 @@ import { FundComponent } from './fund/fund.component';
 import { ShipyardComponent } from './shipyard/shipyard.component';
 import {Ng2OdometerModule} from 'ng2-odometer';
 import { VertepComponent } from './vertep/vertep.component';
+import { TeamComponent } from './team/team.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { VertepComponent } from './vertep/vertep.component';
     FooterComponent,
     FundComponent,
     ShipyardComponent,
-    VertepComponent
+    VertepComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,

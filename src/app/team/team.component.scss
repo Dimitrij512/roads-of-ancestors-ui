@@ -1,0 +1,182 @@
+ul {
+  list-style-type: none;
+}
+
+.member {    
+  width: 220px;
+  height: 220px;
+  margin: 15px;
+}
+
+.item-container{
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  align-content: flex-start;
+  -webkit-align-content: flex-start;
+  text-align: left;  
+}
+
+h4.name {
+  font-weight: bold;
+}
+
+p.description {  
+  margin-top: 10px;
+}
+
+div.mobile {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  align-content: flex-start;
+  -webkit-align-content: flex-start;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.email>a {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  align-content: flex-start;
+  -webkit-align-content: flex-start;
+  text-align: left;  
+}
+
+i.fa.fa-envelope, i.fa.fa-phone-square { 
+  padding-top: 5px;
+}
+
+ul>li{
+  display: inline-block; 
+  width: 50%;   
+}
+
+.info {
+  width: 50%;
+}
+
+.personal-info {
+  margin-top: 10px;
+}
+
+.our-team {
+  font-size: 70px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+ul {
+  margin-top: 35px;
+}
+
+h4.name {
+  margin-top: 15px;  
+}
+
+@media (max-width: 1159px) and (min-width: 768px) {
+  ul>li{    
+    width: 100%;   
+  }
+
+  h4.name {
+    margin-top: 20px;  
+  }
+}
+
+@media (max-width: 767px) {
+  p.our-team {
+    font-size: 52px;
+    line-height: normal;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  ul>li{    
+    width: 100%;   
+  }
+
+  .member {    
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+  }
+
+  ul {
+    padding-left: 0%;
+    margin-top: 20px;
+  }
+
+  h4.name {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+
+  .info {
+    width: 60%;
+  }
+
+  p.personal-info {
+    display: none;
+  }
+
+  p.description {
+    font-size: 12px;
+    line-height: normal;
+  }
+
+  div.mobile p, div.email p {
+    font-size: 10px;
+    line-height: normal;
+  }
+
+  i.fa.fa-envelope, i.fa.fa-phone-square { 
+    padding-top: 0px;
+  }
+  
+  .angular-logo img {
+    padding-top: 100px;
+  }  
+
+}
+
+@media (max-width: 374px) {
+  .info {
+    width: 50%;
+  }   
+
+  h4.name {     
+    font-size: 14px;
+  }
+
+  p.description {
+    font-size: 10px;
+    line-height: normal;
+    margin-top: 7px;
+  }
+
+  div.mobile {
+    margin-top: 7px;
+  }
+
+  div.mobile p, div.email p {
+    font-size: 8px;
+    line-height: normal;
+  }
+
+  .angular-logo img {
+    padding-top: 170px;
+  }
+} 

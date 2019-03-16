@@ -28,3 +28,11 @@ button.nav-link.transparent.dropdown-toggle {
   }  
 }
 
+.navbar>.container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;  
+  -webkit-flex-wrap: wrap;
+  -webkit-align-items: center;
+  -webkit-justify-content: space-between;
+}
