@@ -57,6 +57,7 @@
                     <div ngbDropdown class="d-inline-block dropdown">
                     <button class="nav-link transparent" ngbDropdownToggle title="Глянути список">Про нас</button>
                       <div ngbDropdownMenu aria-labelledby="projectsDropDown" class="dropdown-menu">
+                        <a [routerLink]="['/description']" class="dropdown-item">Опис</a>
                         <a [routerLink]="['/fund-regulations']" class="dropdown-item">Статут фонду</a>
                         <a [routerLink]="['/team']" class="dropdown-item">Команда</a>
                       </div>
@@ -65,8 +66,9 @@
                   <ng-container *ngIf = "sidebarVisible">
                       <p class="d-lg-none" title="Cписок проектів" (click) ="aboutUsVisible = !aboutUsVisible">Про нас</p>
                       <div *ngIf = "aboutUsVisible">
+                        <div class="placing"><a [routerLink]="['/description']" class="d-lg-none">Опис</a></div>
                         <div class="placing"><a [routerLink]="['/fund-regulations']" class="d-lg-none">Статут фонду</a></div>
-                        <div class="placing"><a [routerLink]="['/team']" class="d-lg-none">Команда</a></div>                                                                       
+                        <div class="placing"><a [routerLink]="['/team']" class="d-lg-none">Команда</a></div>
                       </div>
                   </ng-container>
                 </li>
