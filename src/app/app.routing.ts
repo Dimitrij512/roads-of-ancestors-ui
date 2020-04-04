@@ -8,6 +8,7 @@ import { FundComponent } from './fund/fund.component';
 import {ShipyardComponent} from './shipyard/shipyard.component';
 import {VertepComponent} from './vertep/vertep.component';
 import { TeamComponent } from './team/team.component';
+import {DescriptionComponent} from './description/description.component';
 
 const routes: Routes = [
     { path: 'home', component: HomeComponent },
@@ -15,7 +16,8 @@ const routes: Routes = [
     { path: 'fund-regulations', component: FundComponent },
     { path: 'shipyard', component: ShipyardComponent },
     { path: 'vertep', component: VertepComponent },
-    { path: 'team', component: TeamComponent }
+    { path: 'team', component: TeamComponent },
+    { path: 'description', component: DescriptionComponent }
 ];
 
 @NgModule({
