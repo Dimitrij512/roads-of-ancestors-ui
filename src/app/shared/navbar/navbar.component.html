@@ -13,39 +13,26 @@
         <div class="navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <ng-container *ngIf = "!sidebarVisible">
-                      <div ngbDropdown class="d-inline-block dropdown">
-                        <button class="nav-link transparent"                                 
-                                data-placement="bottom" 
-                                ngbDropdownToggle 
-                                title="Список проектів">Проекти фонду
-                        </button>
-                        <div ngbDropdownMenu aria-labelledby="projectsDropDown" class="dropdown-menu">
-                          <a [routerLink]="['/shipyard']" class="dropdown-item">Середньовічна корабельня</a>
-                          <a [routerLink]="['/vertep']" class="dropdown-item">Український вертеп</a>
+                    <ng-container *ngIf="!sidebarVisible">
+                        <div class="navbar-translate">
+                            <a [routerLink]="'/shipyard'" class="navbar-brand">Проекти</a>
+                            <button class="navbar-toggler navbar-burger" type="button"></button>
                         </div>
-                      </div>  
-                  </ng-container>
-                  <ng-container *ngIf = "sidebarVisible">
-                    <p class="d-lg-none" 
-                        title="Cписок проектів" 
-                        (click) ="fundProjectsVisible = !fundProjectsVisible">
-                      Проекти фонду                                            
-                    </p>
-                    <div *ngIf = "fundProjectsVisible">
-                      <div class="placing"><a [routerLink]="['/shipyard']" class="d-lg-none">Середньовічна корабельня</a></div>
-                      <div class="placing"><a [routerLink]="['/vertep']" class="d-lg-none">Український вертеп</a></div>                                               
-                    </div>
-                  </ng-container>                 
+                    </ng-container>
+                    <ng-container *ngIf="sidebarVisible">
+                        <a [routerLink]="'/shipyard'" class="nav-link" title="Проекти" data-placement="bottom">
+                            <p class="d-lg-none">Проекти</p>
+                        </a>
+                    </ng-container>
                 </li>
                 <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/SerednyovichnaKorabelnya/" target="_blank">
+                    <a class="nav-link" rel="tooltip" title="Приєнайся до нас в Facebook" data-placement="bottom" href="https://www.facebook.com/SerednyovichnaKorabelnya/" target="_blank">
                         <i class="fa fa-facebook-square"></i>
                         <p class="d-lg-none">Facebook</p>
                     </a>
                 </li>
                 <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" 
+                    <a class="nav-link" rel="tooltip" title="Слідкуй за нами в Instagram" data-placement="bottom"
                     href="https://www.instagram.com/serednyovichnakorabelnya/?utm_source=ig_profile_share&igshid=1vi320flfshr6&fbclid=IwAR0lG4HHQ3i5z7cssvnsez5tR8D6jvohayd_y-ZvstWNgvEalovcRI6gtkU" 
                     target="_blank">
                         <i class="fa fa-instagram"></i>
@@ -64,7 +51,7 @@
                     </div>                                                             
                   </ng-container>
                   <ng-container *ngIf = "sidebarVisible">
-                      <p class="d-lg-none" title="Cписок проектів" (click) ="aboutUsVisible = !aboutUsVisible">Про нас</p>
+                      <p class="d-lg-none" title="Вся інформація про нас" (click) ="aboutUsVisible = !aboutUsVisible">Про нас</p>
                       <div *ngIf = "aboutUsVisible">
                         <div class="placing"><a [routerLink]="['/description']" class="d-lg-none">Опис</a></div>
                         <div class="placing"><a [routerLink]="['/fund-regulations']" class="d-lg-none">Статут фонду</a></div>
