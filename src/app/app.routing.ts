@@ -1,13 +1,12 @@
-import { NgModule } from '@angular/core';
-import { CommonModule, } from '@angular/common';
-import { BrowserModule  } from '@angular/platform-browser';
-import { Routes, RouterModule } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {BrowserModule} from '@angular/platform-browser';
+import {RouterModule, Routes} from '@angular/router';
 
-import { HomeComponent } from './home/home.component';
-import { FundComponent } from './fund/fund.component';
+import {HomeComponent} from './home/home.component';
+import {FundComponent} from './fund/fund.component';
 import {ShipyardComponent} from './shipyard/shipyard.component';
-import {VertepComponent} from './vertep/vertep.component';
-import { TeamComponent } from './team/team.component';
+import {TeamComponent} from './team/team.component';
 import {DescriptionComponent} from './description/description.component';
 
 const routes: Routes = [
@@ -15,7 +14,6 @@ const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'fund-regulations', component: FundComponent },
     { path: 'shipyard', component: ShipyardComponent },
-    { path: 'vertep', component: VertepComponent },
     { path: 'team', component: TeamComponent },
     { path: 'description', component: DescriptionComponent }
 ];
