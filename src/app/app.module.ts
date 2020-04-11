@@ -15,6 +15,7 @@ import { ShipyardComponent } from './shipyard/shipyard.component';
 import {Ng2OdometerModule} from 'ng2-odometer';
 import { TeamComponent } from './team/team.component';
 import { DescriptionComponent } from './description/description.component';
+import { BoatCredoComponent } from './boat-credo/boat-credo.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { DescriptionComponent } from './description/description.component';
     FundComponent,
     ShipyardComponent,
     TeamComponent,
-    DescriptionComponent
+    DescriptionComponent,
+    BoatCredoComponent
   ],
   imports: [
     BrowserModule,
