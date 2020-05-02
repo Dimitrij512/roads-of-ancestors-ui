@@ -17,6 +17,7 @@ import { TeamComponent } from './team/team.component';
 import { DescriptionComponent } from './description/description.component';
 import { BoatCredoComponent } from './boat-credo/boat-credo.component';
 import { GaroldElizabethComponent } from './garold-elizabeth/garold-elizabeth.component';
+import {NgxGalleryModule} from 'ngx-gallery';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { GaroldElizabethComponent } from './garold-elizabeth/garold-elizabeth.co
     RouterModule,
     AppRoutingModule,
     HomeModule,
+    NgxGalleryModule,
     Ng2OdometerModule.forRoot(),
   ],
   providers: [],
