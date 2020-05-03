@@ -12,6 +12,7 @@ import {BoatCredoComponent} from './boat-credo/boat-credo.component';
 import {GaroldElizabethComponent} from './garold-elizabeth/garold-elizabeth.component';
 import {FrankivskGalichComponent} from './frankivsk-galich/frankivsk-galich.component';
 import {DovbankaComponent} from './dovbanka/dovbanka.component';
+import {LodiaComponent} from './lodia/lodia.component';
 
 const routes: Routes = [
     {path: 'home', component: HomeComponent},
@@ -23,7 +24,8 @@ const routes: Routes = [
     {path: 'boat-credo', component: BoatCredoComponent},
     {path: 'garold-elizabeth', component: GaroldElizabethComponent},
     {path: 'frankivsk-galich', component: FrankivskGalichComponent},
-    {path: 'dovbanka', component: DovbankaComponent}
+    {path: 'dovbanka', component: DovbankaComponent},
+    {path: 'lodia', component: LodiaComponent}
 ];
 
 @NgModule({
