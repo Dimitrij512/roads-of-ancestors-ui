@@ -10,6 +10,7 @@ import {TeamComponent} from './team/team.component';
 import {DescriptionComponent} from './description/description.component';
 import {BoatCredoComponent} from './boat-credo/boat-credo.component';
 import {GaroldElizabethComponent} from './garold-elizabeth/garold-elizabeth.component';
+import {FrankivskGalichComponent} from './frankivsk-galich/frankivsk-galich.component';
 
 const routes: Routes = [
     {path: 'home', component: HomeComponent},
@@ -19,7 +20,8 @@ const routes: Routes = [
     {path: 'team', component: TeamComponent},
     {path: 'description', component: DescriptionComponent},
     {path: 'boat-credo', component: BoatCredoComponent},
-    {path: 'garold-elizabeth', component: GaroldElizabethComponent}
+    {path: 'garold-elizabeth', component: GaroldElizabethComponent},
+    {path: 'frankivsk-galich', component: FrankivskGalichComponent}
 ];
 
 @NgModule({
