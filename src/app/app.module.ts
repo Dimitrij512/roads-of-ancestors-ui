@@ -18,6 +18,7 @@ import { DescriptionComponent } from './description/description.component';
 import { BoatCredoComponent } from './boat-credo/boat-credo.component';
 import { GaroldElizabethComponent } from './garold-elizabeth/garold-elizabeth.component';
 import {NgxGalleryModule} from 'ngx-gallery';
+import { FrankivskGalichComponent } from './frankivsk-galich/frankivsk-galich.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {NgxGalleryModule} from 'ngx-gallery';
     TeamComponent,
     DescriptionComponent,
     BoatCredoComponent,
-    GaroldElizabethComponent
+    GaroldElizabethComponent,
+    FrankivskGalichComponent
   ],
   imports: [
     BrowserModule,
