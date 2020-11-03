@@ -10,7 +10,6 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 
 import { HomeModule } from './home/home.module';
-import { FundComponent } from './fund/fund.component';
 import { ShipyardComponent } from './shipyard/shipyard.component';
 import {Ng2OdometerModule} from 'ng2-odometer';
 import { DescriptionComponent } from './description/description.component';
@@ -26,7 +25,6 @@ import { LodiaComponent } from './lodia/lodia.component';
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    FundComponent,
     ShipyardComponent,
     DescriptionComponent,
     BoatCredoComponent,
