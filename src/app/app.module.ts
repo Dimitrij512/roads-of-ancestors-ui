@@ -13,7 +13,6 @@ import { HomeModule } from './home/home.module';
 import { FundComponent } from './fund/fund.component';
 import { ShipyardComponent } from './shipyard/shipyard.component';
 import {Ng2OdometerModule} from 'ng2-odometer';
-import { TeamComponent } from './team/team.component';
 import { DescriptionComponent } from './description/description.component';
 import { BoatCredoComponent } from './boat-credo/boat-credo.component';
 import { GaroldElizabethComponent } from './garold-elizabeth/garold-elizabeth.component';
@@ -29,7 +28,6 @@ import { LodiaComponent } from './lodia/lodia.component';
     FooterComponent,
     FundComponent,
     ShipyardComponent,
-    TeamComponent,
     DescriptionComponent,
     BoatCredoComponent,
     GaroldElizabethComponent,
