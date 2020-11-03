@@ -12,7 +12,7 @@ export class NavbarComponent implements OnInit {
     fundProjectsVisible = false;
     aboutUsVisible = false;
 
-    constructor(public location: Location, private element : ElementRef) {
+    constructor(public location: Location, private element: ElementRef) {
         this.sidebarVisible = false;
     }
 
@@ -52,9 +52,9 @@ export class NavbarComponent implements OnInit {
         }
     };
     isHome() {
-        var titlee = this.location.prepareExternalUrl(this.location.path());
+        let titlee = this.location.prepareExternalUrl(this.location.path());
 
-        if( titlee === '/home' ) {
+        if ( titlee === '/home' ) {
             return true;
         }
         else {
@@ -62,8 +62,8 @@ export class NavbarComponent implements OnInit {
         }
     }
     isDocumentation() {
-        var titlee = this.location.prepareExternalUrl(this.location.path());
-        if( titlee === '/documentation' ) {
+        let titlee = this.location.prepareExternalUrl(this.location.path());
+        if ( titlee === '/documentation' ) {
             return true;
         }
         else {
@@ -72,8 +72,8 @@ export class NavbarComponent implements OnInit {
     }
 
     isFund() {
-        var titlee = this.location.prepareExternalUrl(this.location.path());
-        if( titlee === '/fund-regulations' ) {
+        let titlee = this.location.prepareExternalUrl(this.location.path());
+        if ( titlee === '/fund-regulations' ) {
             return true;
         }
         else {
