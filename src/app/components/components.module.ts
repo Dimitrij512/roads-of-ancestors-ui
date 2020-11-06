@@ -8,6 +8,7 @@ import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
 import { ComponentsComponent } from './components.component';
 import {GoalsComponent} from './goals/goals.component';
 import {ParticipationComponent} from './participation/participation.component';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
     imports: [
@@ -15,7 +16,8 @@ import {ParticipationComponent} from './participation/participation.component';
         FormsModule,
         NgbModule,
         NouisliderModule,
-        JwBootstrapSwitchNg2Module
+        JwBootstrapSwitchNg2Module,
+        RouterModule
     ],
     declarations: [
         ComponentsComponent,

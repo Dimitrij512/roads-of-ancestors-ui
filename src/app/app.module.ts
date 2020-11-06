@@ -19,6 +19,7 @@ import {NgxGalleryModule} from 'ngx-gallery';
 import { FrankivskGalichComponent } from './frankivsk-galich/frankivsk-galich.component';
 import { DovbankaComponent } from './dovbanka/dovbanka.component';
 import { LodiaComponent } from './lodia/lodia.component';
+import { EventsComponent } from './events/events.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { LodiaComponent } from './lodia/lodia.component';
     GaroldElizabethComponent,
     FrankivskGalichComponent,
     DovbankaComponent,
-    LodiaComponent
+    LodiaComponent,
+    EventsComponent
   ],
   imports: [
     BrowserModule,

@@ -11,10 +11,12 @@ import {GaroldElizabethComponent} from './garold-elizabeth/garold-elizabeth.comp
 import {FrankivskGalichComponent} from './frankivsk-galich/frankivsk-galich.component';
 import {DovbankaComponent} from './dovbanka/dovbanka.component';
 import {LodiaComponent} from './lodia/lodia.component';
+import {EventsComponent} from './events/events.component';
 
 const routes: Routes = [
     {path: 'home', component: HomeComponent},
     {path: '', redirectTo: 'home', pathMatch: 'full'},
+    {path: 'our-events',  component: EventsComponent},
     {path: 'shipyard', component: ShipyardComponent},
     {path: 'description', component: DescriptionComponent},
     {path: 'boat-credo', component: BoatCredoComponent},
