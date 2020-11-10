@@ -7,8 +7,8 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class EventsComponent implements OnInit {
   @Input() text: string;
-  @Input() max: Number = 200;
-  seeMore: Boolean = false;
+  @Input() max = 200;
+  seeMore = false;
 
   constructor() { }
 
