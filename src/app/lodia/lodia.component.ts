@@ -40,6 +40,11 @@ export class LodiaComponent implements OnInit {
 
         this.galleryImages = [
             {
+                small: './assets/img/projects/lodia/1.jpg',
+                medium: './assets/img/projects/lodia/1.jpg',
+                big: './assets/img/projects/lodia/1.jpg'
+            },
+            {
                 small: './assets/img/projects/lodia/2.jpg',
                 medium: './assets/img/projects/lodia/2.jpg',
                 big: './assets/img/projects/lodia/2.jpg'
@@ -95,9 +100,14 @@ export class LodiaComponent implements OnInit {
                 big: './assets/img/projects/lodia/12.jpg'
             },
             {
-                small: './assets/img/projects/lodia/1.jpg',
-                medium: './assets/img/projects/lodia/1.jpg',
-                big: './assets/img/projects/lodia/1.jpg'
+                small: './assets/img/projects/lodia/13.jpg',
+                medium: './assets/img/projects/lodia/13.jpg',
+                big: './assets/img/projects/lodia/13.jpg'
+            },
+            {
+                small: './assets/img/projects/lodia/14.jpg',
+                medium: './assets/img/projects/lodia/14.jpg',
+                big: './assets/img/projects/lodia/14.jpg'
             },
         ];
     }
