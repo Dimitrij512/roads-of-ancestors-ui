@@ -45,11 +45,6 @@ export class LodiaComponent implements OnInit {
                 big: './assets/img/projects/lodia/1.jpg'
             },
             {
-                small: './assets/img/projects/lodia/2.jpg',
-                medium: './assets/img/projects/lodia/2.jpg',
-                big: './assets/img/projects/lodia/2.jpg'
-            },
-            {
                 small: './assets/img/projects/lodia/3.jpg',
                 medium: './assets/img/projects/lodia/3.jpg',
                 big: './assets/img/projects/lodia/3.jpg'
