@@ -12,6 +12,7 @@ import {FrankivskGalichComponent} from './frankivsk-galich/frankivsk-galich.comp
 import {DovbankaComponent} from './dovbanka/dovbanka.component';
 import {LodiaComponent} from './lodia/lodia.component';
 import {EventsComponent} from './events/events.component';
+import {HelpFondComponent} from './help-fond/help-fond.component';
 
 const routes: Routes = [
     {path: 'home', component: HomeComponent},
@@ -23,7 +24,8 @@ const routes: Routes = [
     {path: 'garold-elizabeth', component: GaroldElizabethComponent},
     {path: 'frankivsk-galich', component: FrankivskGalichComponent},
     {path: 'dovbanka', component: DovbankaComponent},
-    {path: 'lodia', component: LodiaComponent}
+    {path: 'lodia', component: LodiaComponent},
+    {path: 'help-found', component: HelpFondComponent}
 ];
 
 @NgModule({

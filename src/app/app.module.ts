@@ -20,6 +20,7 @@ import { FrankivskGalichComponent } from './frankivsk-galich/frankivsk-galich.co
 import { DovbankaComponent } from './dovbanka/dovbanka.component';
 import { LodiaComponent } from './lodia/lodia.component';
 import { EventsComponent } from './events/events.component';
+import { HelpFondComponent } from './help-fond/help-fond.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { EventsComponent } from './events/events.component';
     FrankivskGalichComponent,
     DovbankaComponent,
     LodiaComponent,
-    EventsComponent
+    EventsComponent,
+    HelpFondComponent
   ],
   imports: [
     BrowserModule,
