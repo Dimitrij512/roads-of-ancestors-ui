@@ -25,6 +25,19 @@
                         </a>
                     </ng-container>
                 </li>
+                <li class="nav-item">
+                    <ng-container *ngIf="!sidebarVisible">
+                        <div class="navbar-translate">
+                            <a [routerLink]="'/our-events'" class="navbar-brand">Заходи</a>
+                            <button class="navbar-toggler navbar-burger" type="button"></button>
+                        </div>
+                    </ng-container>
+                    <ng-container *ngIf="sidebarVisible">
+                        <a [routerLink]="'/our-events'" class="nav-link" title="Заходи" data-placement="bottom">
+                            <p class="d-lg-none">Заходи</p>
+                        </a>
+                    </ng-container>
+                </li>
                 <li class="nav-item" *ngIf="!isDocumentation()">
                     <a class="nav-link" rel="tooltip" title="Приєнайся до нас в Facebook" data-placement="bottom" href="https://www.facebook.com/SerednyovichnaKorabelnya/" target="_blank">
                         <i class="fa fa-facebook-square"></i>
