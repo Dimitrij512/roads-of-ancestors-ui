@@ -152,12 +152,7 @@ export class GaroldElizabethComponent implements OnInit {
                 small: './assets/img/projects/elizabeth/12.jpg',
                 medium: './assets/img/projects/elizabeth/12.jpg',
                 big: './assets/img/projects/elizabeth/12.jpg'
-            },
-            {
-                small: './assets/img/projects/elizabeth/12.jpg',
-                medium: './assets/img/projects/elizabeth/12.jpg',
-                big: './assets/img/projects/elizabeth/12.jpg'
-            },
+            }
         ];
     }
 
