@@ -1,12 +1,19 @@
-@media (max-width: 812px) { 
+@media (max-width: 812px) {
+  .angular-logo {
+    display: none;
+
+    &--is-mobile {
+      display: block;
+    }
+  }
+
   .angular-logo img {
-      padding-top: 100px;
+    padding-top: 100px;
   }
 }
 
-@media (max-width: 374px) { 
+@media (max-width: 374px) {
   .angular-logo img {
-      padding-top: 170px;
-    }
+    padding-top: 170px;
   }
-  
+}
