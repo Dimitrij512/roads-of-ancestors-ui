@@ -1,37 +1,43 @@
+.navbar-translate {
+  display: flex;
+  align-items: center;
+}
 
-.transparent, button.d-lg-none.nav-link {
+.transparent,
+button.d-lg-none.nav-link {
   background-color: transparent !important;
   border: 0px !important;
 }
 
-p.d-lg-none, a.d-lg-none {
+p.d-lg-none,
+a.d-lg-none {
   margin: 0px 0px;
-  color: #9A9A9A !important;
+  color: #9a9a9a !important;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.5em;
   padding: 15px 0;
 
-  &:hover{
-    color: #403D39 !important;
+  &:hover {
+    color: #403d39 !important;
   }
 }
 
-.placing{
+.placing {
   margin: 0px 0px 15px 15px !important;
 }
 
 button.nav-link.transparent.dropdown-toggle {
-  &:focus{
-    outline: 0;    
-  }  
+  &:focus {
+    outline: 0;
+  }
 }
 
-.navbar>.container {
+.navbar > .container {
   display: -webkit-flex;
   display: -moz-flex;
-  display: -ms-flex;  
+  display: -ms-flex;
   -webkit-flex-wrap: wrap;
   -webkit-align-items: center;
   -webkit-justify-content: space-between;
