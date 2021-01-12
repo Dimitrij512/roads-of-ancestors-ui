@@ -1,10 +1,13 @@
-<nav class="navbar navbar-expand-lg fixed-top navbar-transparent" 
-    color-on-scroll="500"        
-    >
+<nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="500">
     <div class="container">
+        <div class="angular-logo">
+            <img src="assets/img/logo.gif" alt="">
+        </div>
         <div class="navbar-translate">
             <a class="navbar-brand" [routerLink]="'/home'">Дороги предків</a>
-            <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
+            <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse"
+                data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                aria-label="Toggle navigation" (click)="sidebarToggle()">
                 <span class="navbar-toggler-bar"></span>
                 <span class="navbar-toggler-bar"></span>
                 <span class="navbar-toggler-bar"></span>
@@ -39,36 +42,38 @@
                     </ng-container>
                 </li>
                 <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a class="nav-link" rel="tooltip" title="Приєнайся до нас в Facebook" data-placement="bottom" href="https://www.facebook.com/SerednyovichnaKorabelnya/" target="_blank">
+                    <a class="nav-link" rel="tooltip" title="Приєнайся до нас в Facebook" data-placement="bottom"
+                        href="https://www.facebook.com/SerednyovichnaKorabelnya/" target="_blank">
                         <i class="fa fa-facebook-square"></i>
                         <p class="d-lg-none">Facebook</p>
                     </a>
                 </li>
                 <li class="nav-item" *ngIf="!isDocumentation()">
                     <a class="nav-link" rel="tooltip" title="Слідкуй за нами в Instagram" data-placement="bottom"
-                    href="https://www.instagram.com/serednyovichnakorabelnya/?utm_source=ig_profile_share&igshid=1vi320flfshr6&fbclid=IwAR0lG4HHQ3i5z7cssvnsez5tR8D6jvohayd_y-ZvstWNgvEalovcRI6gtkU" 
-                    target="_blank">
+                        href="https://www.instagram.com/serednyovichnakorabelnya/?utm_source=ig_profile_share&igshid=1vi320flfshr6&fbclid=IwAR0lG4HHQ3i5z7cssvnsez5tR8D6jvohayd_y-ZvstWNgvEalovcRI6gtkU"
+                        target="_blank">
                         <i class="fa fa-instagram"></i>
                         <p class="d-lg-none">Instagram</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                  <ng-container *ngIf = "!sidebarVisible">
-                    <div ngbDropdown class="d-inline-block dropdown">
-                    <button class="nav-link transparent" ngbDropdownToggle title="Глянути список">Про нас</button>
-                      <div ngbDropdownMenu aria-labelledby="projectsDropDown" class="dropdown-menu">
-                        <a [routerLink]="['/description']" class="dropdown-item">Опис</a>
-                      </div>
-                    </div>                                                             
-                  </ng-container>
-                  <ng-container *ngIf = "sidebarVisible">
-                      <p class="d-lg-none" title="Вся інформація про нас" (click) ="aboutUsVisible = !aboutUsVisible">Про нас</p>
-                      <div *ngIf = "aboutUsVisible">
-                        <div class="placing"><a [routerLink]="['/description']" class="d-lg-none">Опис</a></div>
-                      </div>
-                  </ng-container>
+                    <ng-container *ngIf="!sidebarVisible">
+                        <div ngbDropdown class="d-inline-block dropdown">
+                            <button class="nav-link transparent" ngbDropdownToggle title="Глянути список">Про
+                                нас</button>
+                            <div ngbDropdownMenu aria-labelledby="projectsDropDown" class="dropdown-menu">
+                                <a [routerLink]="['/description']" class="dropdown-item">Опис</a>
+                            </div>
+                        </div>
+                    </ng-container>
+                    <ng-container *ngIf="sidebarVisible">
+                        <p class="d-lg-none" title="Вся інформація про нас" (click)="aboutUsVisible = !aboutUsVisible">
+                            Про нас</p>
+                        <div *ngIf="aboutUsVisible">
+                            <div class="placing"><a [routerLink]="['/description']" class="d-lg-none">Опис</a></div>
+                        </div>
+                    </ng-container>
                 </li>
-                                
             </ul>
         </div>
     </div>
