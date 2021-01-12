@@ -239,6 +239,17 @@
   max-width: 90px;
   margin: 0;
 
+  &--is-mobile {
+    display: none;
+  }
+
+  @media (max-width: 991px) {
+    display: none;
+    &--is-mobile {
+      display: block;
+    }
+  }
+
   img {
     width: 100%;
     //border-radius: 40%;
