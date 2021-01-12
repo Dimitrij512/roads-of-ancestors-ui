@@ -3,6 +3,11 @@
   align-items: center;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
 .transparent,
 button.d-lg-none.nav-link {
   background-color: transparent !important;
