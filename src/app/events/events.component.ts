@@ -9,6 +9,10 @@ import {NgxGalleryAnimation, NgxGalleryImage, NgxGalleryOptions} from "ngx-galle
 export class EventsComponent implements OnInit {
     galleryOptions: NgxGalleryOptions[];
     galleryImages: NgxGalleryImage[];
+    galleryBuildConstruction: NgxGalleryImage[];
+    galleryWalkByRiver: NgxGalleryImage[];
+    galleryTravelByRiver: NgxGalleryImage[];
+    galleryWalkByAncientBoat: NgxGalleryImage[];
     @Input() text: string;
     @Input() max = 200;
     seeMore = false;
@@ -16,7 +20,6 @@ export class EventsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    // tslint:disable-next-line:max-line-length
     this.text = 'Благодійний фонд "Дороги предків" дає унікальну можливість усім хто бажає приєднатися до нашої культури\n' +
         '            через навчання багатьом середньовічним ремеслам. В багатьох музеях відвідувачам надається можливість лише\n' +
         '            споглядати на витвори мистецтва та на побутові речі своїх пращурів, а ми даємо вам можливість зробити те ж\n' +
@@ -106,6 +109,136 @@ export class EventsComponent implements OnInit {
                 big: './assets/img/projects/hand-made/10.jpg'
             }
         ];
+
+      this.galleryBuildConstruction = [
+          {
+              small: './assets/img/events/construction/1.jpg',
+              medium: './assets/img/events/construction/1.jpg',
+              big: './assets/img/events/construction/1.jpg'
+          },
+          {
+              small: './assets/img/events/construction/2.jpg',
+              medium: './assets/img/events/construction/2.jpg',
+              big: './assets/img/events/construction/2.jpg'
+          },
+          {
+              small: './assets/img/events/construction/3.jpg',
+              medium: './assets/img/events/construction/3.jpg',
+              big: './assets/img/events/construction/3.jpg'
+          },
+          {
+              small: './assets/img/events/construction/4.jpg',
+              medium: './assets/img/events/construction/4.jpg',
+              big: './assets/img/events/construction/4.jpg'
+          },
+          {
+              small: './assets/img/events/construction/5.jpg',
+              medium: './assets/img/events/construction/5.jpg',
+              big: './assets/img/events/construction/5.jpg'
+          },
+          {
+              small: './assets/img/events/construction/6.jpg',
+              medium: './assets/img/events/construction/6.jpg',
+              big: './assets/img/events/construction/6.jpg'
+          },
+          {
+              small: './assets/img/events/construction/7.jpg',
+              medium: './assets/img/events/construction/7.jpg',
+              big: './assets/img/events/construction/7.jpg'
+          },
+          {
+              small: './assets/img/events/construction/8.jpg',
+              medium: './assets/img/events/construction/8.jpg',
+              big: './assets/img/events/construction/8.jpg'
+          }
+      ];
+      this.galleryWalkByRiver = [
+          {
+              small: './assets/img/events/walkByRiver/1.jpg',
+              medium: './assets/img/events/walkByRiver/1.jpg',
+              big: './assets/img/events/walkByRiver/1.jpg'
+          },
+          {
+              small: './assets/img/events/walkByRiver/2.jpg',
+              medium: './assets/img/events/walkByRiver/2.jpg',
+              big: './assets/img/events/walkByRiver/2.jpg'
+          },
+          {
+              small: './assets/img/events/walkByRiver/3.jpg',
+              medium: './assets/img/events/walkByRiver/3.jpg',
+              big: './assets/img/events/walkByRiver/3.jpg'
+          },
+          {
+              small: './assets/img/events/walkByRiver/4.jpg',
+              medium: './assets/img/events/walkByRiver/4.jpg',
+              big: './assets/img/events/walkByRiver/4.jpg'
+          },
+          {
+              small: './assets/img/events/walkByRiver/5.jpg',
+              medium: './assets/img/events/walkByRiver/5.jpg',
+              big: './assets/img/events/walkByRiver/5.jpg'
+          },
+          {
+              small: './assets/img/events/walkByRiver/6.jpg',
+              medium: './assets/img/events/walkByRiver/6.jpg',
+              big: './assets/img/events/walkByRiver/6.jpg'
+          }
+      ];
+
+      this.galleryTravelByRiver = [
+          {
+              small: './assets/img/events/travelByRiver/1.jpg',
+              medium: './assets/img/events/travelByRiver/1.jpg',
+              big: './assets/img/events/travelByRiver/1.jpg'
+          },
+          {
+              small: './assets/img/events/travelByRiver/2.jpg',
+              medium: './assets/img/events/travelByRiver/2.jpg',
+              big: './assets/img/events/travelByRiver/2.jpg'
+          },
+          {
+              small: './assets/img/events/travelByRiver/3.jpg',
+              medium: './assets/img/events/travelByRiver/3.jpg',
+              big: './assets/img/events/travelByRiver/3.jpg'
+          },
+          {
+              small: './assets/img/events/travelByRiver/4.jpg',
+              medium: './assets/img/events/travelByRiver/4.jpg',
+              big: './assets/img/events/travelByRiver/4.jpg'
+          },
+          {
+              small: './assets/img/events/travelByRiver/5.jpg',
+              medium: './assets/img/events/travelByRiver/5.jpg',
+              big: './assets/img/events/travelByRiver/5.jpg'
+          },
+          {
+              small: './assets/img/events/travelByRiver/6.jpg',
+              medium: './assets/img/events/travelByRiver/6.jpg',
+              big: './assets/img/events/travelByRiver/6.jpg'
+          }
+      ];
+      this.galleryWalkByAncientBoat = [
+          {
+              small: './assets/img/events/walkByAncientBoat/1.jpg',
+              medium: './assets/img/events/walkByAncientBoat/1.jpg',
+              big: './assets/img/events/walkByAncientBoat/1.jpg'
+          },
+          {
+              small: './assets/img/events/walkByAncientBoat/2.jpg',
+              medium: './assets/img/events/walkByAncientBoat/2.jpg',
+              big: './assets/img/events/walkByAncientBoat/2.jpg'
+          },
+          {
+              small: './assets/img/events/walkByAncientBoat/3.jpg',
+              medium: './assets/img/events/walkByAncientBoat/3.jpg',
+              big: './assets/img/events/walkByAncientBoat/3.jpg'
+          },
+          {
+              small: './assets/img/events/walkByAncientBoat/4.jpg',
+              medium: './assets/img/events/walkByAncientBoat/4.jpg',
+              big: './assets/img/events/walkByAncientBoat/4.jpg'
+          }
+      ];
   }
 
 }
