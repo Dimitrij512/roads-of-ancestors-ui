@@ -11,6 +11,7 @@ export class NavbarComponent implements OnInit {
     public sidebarVisible: boolean;
     fundProjectsVisible = false;
     aboutUsVisible = false;
+    projectsVisible = false;
 
     constructor(public location: Location, private element: ElementRef) {
         this.sidebarVisible = false;
@@ -32,6 +33,7 @@ export class NavbarComponent implements OnInit {
         html.classList.add('nav-open');
 
         this.sidebarVisible = true;
+        this.projectsVisible = true;
     };
     sidebarClose() {
         const html = document.getElementsByTagName('html')[0];
@@ -41,6 +43,7 @@ export class NavbarComponent implements OnInit {
         html.classList.remove('nav-open');
         this.fundProjectsVisible = false;
         this.aboutUsVisible = false;
+        this.projectsVisible = false;
     };
     sidebarToggle() {
         // const toggleButton = this.toggleButton;

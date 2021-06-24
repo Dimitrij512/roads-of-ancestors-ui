@@ -13,12 +13,14 @@ import {DovbankaComponent} from './dovbanka/dovbanka.component';
 import {LodiaComponent} from './lodia/lodia.component';
 import {EventsComponent} from './events/events.component';
 import {HelpFondComponent} from './help-fond/help-fond.component';
+import {EmbassyComponent} from './embassy/embassy.component';
 
 const routes: Routes = [
     {path: 'home', component: HomeComponent},
     {path: '', redirectTo: 'home', pathMatch: 'full'},
     {path: 'our-events',  component: EventsComponent},
     {path: 'shipyard', component: ShipyardComponent},
+    {path: 'embassy', component: EmbassyComponent},
     {path: 'description', component: DescriptionComponent},
     {path: 'boat-credo', component: BoatCredoComponent},
     {path: 'garold-elizabeth', component: GaroldElizabethComponent},

@@ -19,15 +19,21 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <ng-container *ngIf="!sidebarVisible">
-                        <div class="navbar-translate">
-                            <a [routerLink]="'/shipyard'" class="navbar-brand">Проекти</a>
-                            <button class="navbar-toggler navbar-burger" type="button"></button>
+                        <div ngbDropdown class="d-inline-block dropdown">
+                            <button class="nav-link transparent" ngbDropdownToggle title="Глянути список">Проєкти</button>
+                            <div ngbDropdownMenu aria-labelledby="projectsDropDown" class="dropdown-menu">
+                                <a [routerLink]="'/shipyard'" class="dropdown-item">Середньовічна корабельня</a>
+                                <a [routerLink]="'/embassy'" class="dropdown-item">Посольство королівства руського</a>
+                            </div>
                         </div>
                     </ng-container>
                     <ng-container *ngIf="sidebarVisible">
-                        <a [routerLink]="'/shipyard'" class="nav-link" title="Проекти" data-placement="bottom">
-                            <p class="d-lg-none">Проекти</p>
-                        </a>
+                        <p class="d-lg-none" title="Наші прєкти" (click)="projectsVisible = !projectsVisible">
+                            Про нас</p>
+                        <div *ngIf="projectsVisible">
+                            <div class="placing"><a [routerLink]="'/shipyard'" class="d-lg-none">Середньовічна корабельня</a></div>
+                            <div class="placing"><a [routerLink]="'/embassy'" class="d-lg-none">Посольство королівства руського</a></div>
+                        </div>
                     </ng-container>
                 </li>
                 <li class="nav-item">
