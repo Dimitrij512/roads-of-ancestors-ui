@@ -20,7 +20,7 @@
                 <li class="nav-item">
                     <ng-container *ngIf="!sidebarVisible">
                         <div ngbDropdown class="d-inline-block dropdown">
-                            <button class="nav-link transparent" ngbDropdownToggle title="Глянути список">Проєкти</button>
+                            <button class="nav-link transparent" ngbDropdownToggle title="Глянути список">Проекти</button>
                             <div ngbDropdownMenu aria-labelledby="projectsDropDown" class="dropdown-menu">
                                 <a [routerLink]="'/shipyard'" class="dropdown-item">Середньовічна корабельня</a>
                                 <a [routerLink]="'/embassy'" class="dropdown-item">Посольство королівства руського</a>
@@ -29,7 +29,7 @@
                     </ng-container>
                     <ng-container *ngIf="sidebarVisible">
                         <p class="d-lg-none" title="Наші прєкти" (click)="projectsVisible = !projectsVisible">
-                            Про нас</p>
+                            Проекти</p>
                         <div *ngIf="projectsVisible">
                             <div class="placing"><a [routerLink]="'/shipyard'" class="d-lg-none">Середньовічна корабельня</a></div>
                             <div class="placing"><a [routerLink]="'/embassy'" class="d-lg-none">Посольство королівства руського</a></div>
