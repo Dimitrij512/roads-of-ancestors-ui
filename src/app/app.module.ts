@@ -22,6 +22,7 @@ import { LodiaComponent } from './lodia/lodia.component';
 import { EventsComponent } from './events/events.component';
 import { HelpFondComponent } from './help-fond/help-fond.component';
 import { EmbassyComponent } from './embassy/embassy.component';
+import { NorwayComponent } from './norway/norway.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { EmbassyComponent } from './embassy/embassy.component';
     LodiaComponent,
     EventsComponent,
     HelpFondComponent,
-    EmbassyComponent
+    EmbassyComponent,
+    NorwayComponent
   ],
   imports: [
     BrowserModule,
