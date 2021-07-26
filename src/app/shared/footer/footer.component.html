@@ -4,10 +4,23 @@
             <nav class="footer-nav">
                 <ul>
                     <li><a [routerLink]="['/']">Головна</a></li>
-                    <li><a [routerLink]="['/shipyard']">Середньовічна корабельня</a></li>
+                    <li><a [routerLink]="['/help-found']">Допомогти фонду</a></li>
+                    <li><a class="nav-link" rel="tooltip" title="Слідкуй за нами в Instagram" data-placement="bottom"
+                           href="https://www.instagram.com/serednyovichnakorabelnya/?utm_source=ig_profile_share&igshid=1vi320flfshr6&fbclid=IwAR0lG4HHQ3i5z7cssvnsez5tR8D6jvohayd_y-ZvstWNgvEalovcRI6gtkU"
+                           target="_blank">
+                        <i class="fa fa-instagram"></i>
+                        <p class="d-lg-none">Instagram</p>
+                    </a></li>
+                    <li><a class="nav-link" rel="tooltip" title="Приєнайся до нас в Facebook" data-placement="bottom"
+                           href="https://www.facebook.com/SerednyovichnaKorabelnya/" target="_blank">
+                        <i class="fa fa-facebook-square"></i>
+                        <p class="d-lg-none">Facebook</p>
+                    </a></li>
                 </ul>
             </nav>
             <div class="credits ml-auto">
+                <span class="copyright">тел.+38 0671561492</span>
+                <span class="copyright">dorogypredkiv@gmail.com</span>
                 <span class="copyright">© {{test | date: 'yyyy'}}  Дороги предків</span>
             </div>
         </div>
