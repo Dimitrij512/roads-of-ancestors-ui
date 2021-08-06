@@ -1,4 +1,4 @@
-<footer class="footer">
+<!--<footer class="footer">
     <div class="container">
         <div class="row">
             <nav class="footer-nav">
@@ -6,23 +6,74 @@
                     <li><a [routerLink]="['/']">Головна</a></li>
                     <li><a [routerLink]="['/help-found']">Допомогти фонду</a></li>
                     <li><a class="nav-link" rel="tooltip" title="Слідкуй за нами в Instagram" data-placement="bottom"
-                           href="https://www.instagram.com/serednyovichnakorabelnya/?utm_source=ig_profile_share&igshid=1vi320flfshr6&fbclid=IwAR0lG4HHQ3i5z7cssvnsez5tR8D6jvohayd_y-ZvstWNgvEalovcRI6gtkU"
-                           target="_blank">
-                        <i class="fa fa-instagram"></i>
-                        <p class="d-lg-none">Instagram</p>
-                    </a></li>
+                            href="https://www.instagram.com/serednyovichnakorabelnya/?utm_source=ig_profile_share&igshid=1vi320flfshr6&fbclid=IwAR0lG4HHQ3i5z7cssvnsez5tR8D6jvohayd_y-ZvstWNgvEalovcRI6gtkU"
+                            target="_blank">
+                            <i class="fa fa-instagram"></i>
+                            <p class="d-lg-none">Instagram</p>
+                        </a></li>
                     <li><a class="nav-link" rel="tooltip" title="Приєнайся до нас в Facebook" data-placement="bottom"
-                           href="https://www.facebook.com/SerednyovichnaKorabelnya/" target="_blank">
-                        <i class="fa fa-facebook-square"></i>
-                        <p class="d-lg-none">Facebook</p>
-                    </a></li>
+                            href="https://www.facebook.com/SerednyovichnaKorabelnya/" target="_blank">
+                            <i class="fa fa-facebook-square"></i>
+                            <p class="d-lg-none">Facebook</p>
+                        </a></li>
                 </ul>
             </nav>
             <div class="credits ml-auto">
-                <span class="copyright">тел.+38 0671561492</span>
+                <span class="copyright">+380 67 156-14-92</span>
                 <span class="copyright">dorogypredkiv@gmail.com</span>
-                <span class="copyright">© {{test | date: 'yyyy'}}  Дороги предків</span>
+                <span class="copyright">© {{test | date: 'yyyy'}} Дороги предків</span>
             </div>
         </div>
     </div>
+</footer>-->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__contacts">
+            <img src="assets/img/logo.gif" class="footer__contacts-logo">
+            <ul class="footer__contacts-phone">
+                <li class="footer__contacts-phone-item"><a href="tel:+380671561492"
+                        class="footer__contacts-phone-item-link">+380 67 156-14-92</a></li>
+                <li class="footer__contacts-phone-item">
+                    <p>Надішліть нам email:</p>
+                <li class="footer__contacts-phone-item"><a href="mailto:dorogypredkiv@gmail.com"
+                        class="footer__contacts-phone-item-link">dorogypredkiv@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="footer__navigation">
+            <span class="footer__navigation-text">Про нас</span>
+            <ul class="footer__navigation-list">
+                <li class="footer__navigation-item">
+                    <a [routerLink]="['/']">Головна</a>
+                </li>
+                <li class="footer__navigation-item">
+                    <a [routerLink]="['/']">Проекти</a>
+                </li>
+                <li class="footer__navigation-item">
+                    <a [routerLink]="['/']">Заходи</a>
+                </li>
+                <li class="footer__navigation-item">
+                    <a [routerLink]="['/help-found']">Допомогти фонду</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__social">
+            <h4 class="footer__social-heading">Ми у соціальних мережах</h4>
+            <ul class="footer__social-list">
+                <li class="footer__social-item">
+                    <a class="nav-link footer__social-item-link" rel="tooltip" title="Слідкуй за нами в Instagram"
+                        data-placement="bottom"
+                        href="https://www.instagram.com/serednyovichnakorabelnya/?utm_source=ig_profile_share&igshid=1vi320flfshr6&fbclid=IwAR0lG4HHQ3i5z7cssvnsez5tR8D6jvohayd_y-ZvstWNgvEalovcRI6gtkU"
+                        target="_blank">Instagram
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a class="nav-link footer__social-item-link" rel="tooltip" title="Приєнайся до нас в Facebook"
+                        data-placement="bottom" href="https://www.facebook.com/SerednyovichnaKorabelnya/"
+                        target="_blank">Facebook
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-copy"><span class="copyright">© {{test | date: 'yyyy'}} Дороги предків</span></div>
 </footer>
